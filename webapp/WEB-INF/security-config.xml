@@ -20,6 +20,10 @@
        <security:intercept-url pattern="/supview" access="hasRole('ROLE_ADMIN')"/>
        <security:intercept-url pattern="/supadd" access="hasRole('ROLE_ADMIN')"/>
         <security:intercept-url pattern="/editSupplier**" access="hasRole('ROLE_ADMIN')"/>
+              
+              <security:intercept-url pattern="/mycart" access="hasRole('ROLE_USER')"/>
+       <security:intercept-url pattern="/removecart" access="hasRole('ROLE_USER')"/>
+       <security:intercept-url pattern="/Mycart" access="hasRole('ROLE_USER')"/>
        
         <security:form-login  
        
